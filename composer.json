@@ -1,0 +1,33 @@
+{
+    "name": "korko/auth-attempts",
+    "description": "description...",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension"],
+    "homepage": "https://github.com/korko/auth-attempts",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "lytaytouch",
+            "email": "lytaytouch@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Korko\\AuthAttempts\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Korko\\AuthAttempts\\AuthAttemptsServiceProvider"
+            ]
+        }
+    }
+}
