@@ -1,6 +1,6 @@
 <?php
 
-namespace Korko\AuthAttempts;
+namespace KorkoInvt\AuthAttempts;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -21,7 +21,7 @@ class AuthAttemptsServiceProvider extends ServiceProvider
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
-                [$assets => public_path('vendor/korko/auth-attempts')],
+                [$assets => public_path('vendor/korkoinvt/auth-attempts')],
                 'auth-attempts'
             );
         }
